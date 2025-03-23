@@ -6,7 +6,7 @@ public class CinemaSeat {
     private int seatNumber;
     private String client;
 
-    public CinemaSeat(int rowNumber , int seatNumber , String client){
+    public CinemaSeat(int rowNumber, int seatNumber, String client) {
         this.rowNumber = rowNumber;
         this.seatNumber = seatNumber;
         this.client = client;
@@ -16,29 +16,35 @@ public class CinemaSeat {
         return this.rowNumber;
     }
 
-    public int getSeatNumber(){
+    public int getSeatNumber() {
         return this.seatNumber;
     }
 
-    public String getClient(){
+    public String getClient() {
         return this.client;
     }
 
     @Override
-    public boolean equals(Object obj){
+    public boolean equals(Object obj) {
         boolean areEquals = false;
-        if(this == obj){
+        if (this == obj) {
             areEquals = true;
-        }else if(obj != null && obj instanceof CinemaSeat){
+        } else if (obj != null && obj instanceof CinemaSeat) {
             CinemaSeat cinemaSeat = (CinemaSeat) obj;
             areEquals = this.getRowNumber() == cinemaSeat.getRowNumber() &&
-                        this.getSeatNumber() == cinemaSeat.getSeatNumber();
+                    this.getSeatNumber() == cinemaSeat.getSeatNumber();
         }
-    return areEquals;
+        return areEquals;
     }
 
     @Override
-    public int hashCode(){
-        return Objects.hash(this.rowNumber , this.seatNumber);
+    public int hashCode() {
+        return Objects.hash(this.rowNumber, this.seatNumber);
+    }
+
+    public String toString() {
+        return "Row number: " + rowNumber + "\n" + "Seat number: " + seatNumber + "\n" + "Client: " + client + "\n";
     }
 }
+
+
