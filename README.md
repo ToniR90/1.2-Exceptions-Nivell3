@@ -18,6 +18,5 @@ Welcome to the **Cinema Management System**, a simple Java-based application des
 ## Setup and Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/ToniR90/1.2-Exceptions-Nivell3.git
+   https://github.com/ToniR90/1.2-Exceptions-Nivell3.git
  
