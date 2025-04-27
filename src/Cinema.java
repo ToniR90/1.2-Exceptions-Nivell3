@@ -43,9 +43,7 @@ public class Cinema {
                     break;
                 case 2:
                     System.out.println("Enter the client's name");
-                    scanner.next();
-                    client = scanner.nextLine();
-                    System.out.println("Cliente: " + client); //prova per veure si es guarda la variable
+                    client = scanner.next().trim();
                     cinemaManagement.showSeatsByClient(client);
                     break;
                 case 3:

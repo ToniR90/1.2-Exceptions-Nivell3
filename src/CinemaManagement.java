@@ -170,6 +170,4 @@ public class CinemaManagement {
         }while(!valid);
         return seatNumber;
     }
-
-
 }
